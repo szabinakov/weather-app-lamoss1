@@ -1,0 +1,23 @@
+body {
+  @import url(https://fonts.google.com/specimen/Edu+NSW+ACT+Foundation);
+  margin: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.556rem 2rem;
+  min-height: 100vh;
+  background-color: goldenrod;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("https://assets.pokemon.com/assets/cms2/img/pokedex/full/351.png");
+  background-size: 200px; */
+}
+
+/*The web page will have a lightblue background if the orientation is in landscape mode: */
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* note to self. use different castforms for weather using if statements  */
