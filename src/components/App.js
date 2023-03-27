@@ -6,8 +6,8 @@ import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 
 function App({ location, forecasts }) {
-  // const { forecasts, location } = props;
-  const [selectedDate, setSelectedDate] = useState(forecasts[0].date);
+  // const [forecasts, location] = props;
+  const { selectedDate, setSelectedDate } = useState(forecasts[0].date);
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
