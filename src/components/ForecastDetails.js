@@ -20,7 +20,6 @@
 // export default ForecastDetails;
 
 import React from "react";
-import "../styles/ForecastDetails.css";
 import getPokemonImageUrl from "../helpers/getPokemonImageUrl";
 
 function ForecastDetails(props) {

@@ -1,4 +1,4 @@
-/* body {
+body {
   @import url(https://fonts.google.com/specimen/Edu+NSW+ACT+Foundation);
   margin: 100;
   display: flex;
@@ -6,15 +6,10 @@
   justify-content: space-between;
   padding: 2.556rem 2rem;
   min-height: 100vh;
-  background-color: grey;
-  background-image: src/winter.jpeg;
+  background-color: blue;
+  /* background-image: url("https://c4.wallpaperflare.com/wallpaper/192/788/7/video-games-retro-games-anime-cartoon-wallpaper-preview.jpg"); */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: url("https://assets.pokemon.com/assets/cms2/img/pokedex/full/351.png");
-  background-size: 200px; */
-
-/*The web page will have a lightblue background if the orientation is in landscape mode: */
-/* @media only screen and (orientation: landscape) {
-  body {
-    background-color: lightblue;
-  } */
+  background-size: 200px;
+}

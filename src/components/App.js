@@ -88,7 +88,7 @@ function App() {
 
   return (
     <div className="pokeball">
-      <h1 className="pokemon-font">Weather App</h1>
+      <h1 className="pokemon-font">Pokemon Weather</h1>
       <LocationDetails city={location.city} country={location.country} />
       <SearchForm
         searchText={searchText}

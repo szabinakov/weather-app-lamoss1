@@ -51,9 +51,10 @@ describe("ForecastSummaries", () => {
         icon: 721,
       },
     ],
-    onForecastSelect: () => {},
-  };
+   onForecastSelect: () => {},
+}
 
+  describe("ForecastSummaries", () => {
   it("renders correctly", () => {
     const { asFragment } = render(
       <ForecastSummaries
