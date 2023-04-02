@@ -2,38 +2,73 @@ import React from "react";
 import { render } from "@testing-library/react";
 import ForecastSummaries from "../../components/ForecastSummaries";
 
-describe("ForcastSummaries", () => {
-  const validProps = [
-    {
-      date: 1111111,
-      description: "Stub description 1",
-      icon: "800",
-      temperature: {
-        max: 22,
-        min: 12,
+describe("ForecastSummaries", () => {
+  const validProps = {
+    forecasts: [
+      {
+        date: 1525046400000,
+        temperature: {
+          max: 11,
+          min: 4,
+        },
+        description: "Clear",
+        icon: 800,
       },
-    },
-    {
-      date: 2222222,
-      description: "Stub description2",
-      icon: "stubIcon2",
-      temperature: {
-        max: 24,
-        min: 13,
+      {
+        date: 1525132800000,
+        temperature: {
+          max: 13,
+          min: 8,
+        },
+        description: "Stormy",
+        icon: 211,
       },
-    },
-  ];
+      {
+        date: 1525219200000,
+        temperature: {
+          max: 1,
+          min: -2,
+        },
+        description: "Heavy Snow",
+        icon: 602,
+      },
+      {
+        date: 1525305600000,
+        temperature: {
+          max: 20,
+          min: 4,
+        },
+        description: "Tornado",
+        icon: 781,
+      },
+      {
+        date: 1525392000000,
+        temperature: {
+          max: 25,
+          min: 18,
+        },
+        description: "Hazy",
+        icon: 721,
+      },
+    ],
+    onForecastSelect: () => {},
+  };
 
-  xit("renders correctly", () => {
-    const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
+  it("renders correctly", () => {
+    const { asFragment } = render(
+      <ForecastSummaries
+        forecasts={validProps.forecasts}
+        onForecastSelect={validProps.onForecastSelect}
+      />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
-  xit("renders the correct number of ForecastSummary instances", () => {
+  it("renders the correct number of ForecastSummary instances", () => {
     const { getAllByTestId } = render(
       <ForecastSummaries forecasts={validProps} />
     );
 
-    expect(getAllByTestId("forecast-summary")).toHaveLength(2);
+    expect(getAllByTestId("forecast-summary")).toHaveLength(5);
   });
 });

@@ -13,7 +13,7 @@ function ForecastSummaries({ forecasts, onForecastSelect }) {
           classname="forecast-date"
           date={forecast.date}
           description={forecast.description}
-          icon={forecast.icon}
+          icon={forecast.icon.toString()}
           onSelect={onForecastSelect}
           temperature={forecast.temperature}
         />

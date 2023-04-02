@@ -14,7 +14,7 @@ describe("ForecastSummary", () => {
     onSelect: () => {},
   };
 
-  xit("renders correctly", () => {
+  it("renders correctly", () => {
     const { asFragment } = render(
       <ForecastSummary
         date={validProps.date}
@@ -27,7 +27,7 @@ describe("ForecastSummary", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  xit("renders correct values for props", () => {
+  it("renders correct values for props", () => {
     const { getByText, getByTestId } = render(
       <ForecastSummary
         date={validProps.date}

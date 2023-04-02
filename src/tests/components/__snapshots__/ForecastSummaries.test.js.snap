@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ForcastSummaries renders correctly 1`] = `
+exports[`ForecastSummaries renders correctly 1`] = `
 <DocumentFragment>
   <div
     class="forecast-summaries"
@@ -12,25 +12,32 @@ exports[`ForcastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__date"
       >
-        1111111
+        1525046400000
       </div>
-      Thu Jan 01 1970
+      Mon Apr 30 2018
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        <img />
+        <img
+          alt="800"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
       >
-        22
+        11
       </div>
       <div
         class="forecast-summary__description"
       >
-        Stub description 1
+        Clear
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
     <div
       class="forecast-summary"
@@ -39,25 +46,134 @@ exports[`ForcastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__date"
       >
-        2222222
+        1525132800000
       </div>
-      Thu Jan 01 1970
+      Tue May 01 2018
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
       >
-        <img />
+        <img
+          alt="211"
+        />
       </div>
       <div
         class="forecast-summary__temperature"
       >
-        24
+        13
       </div>
       <div
         class="forecast-summary__description"
       >
-        Stub description2
+        Stormy
       </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-summary"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        1525219200000
+      </div>
+      Wed May 02 2018
+      <div
+        class="forecast-summary__icon"
+        data-testid="forecast-icon"
+      >
+        <img
+          alt="602"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        1
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Heavy Snow
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-summary"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        1525305600000
+      </div>
+      Thu May 03 2018
+      <div
+        class="forecast-summary__icon"
+        data-testid="forecast-icon"
+      >
+        <img
+          alt="781"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        20
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Tornado
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
+    </div>
+    <div
+      class="forecast-summary"
+      data-testid="forecast-summary"
+    >
+      <div
+        class="forecast-summary__date"
+      >
+        1525392000000
+      </div>
+      Fri May 04 2018
+      <div
+        class="forecast-summary__icon"
+        data-testid="forecast-icon"
+      >
+        <img
+          alt="721"
+        />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        25
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Hazy
+      </div>
+      <button
+        type="button"
+      >
+        More details
+      </button>
     </div>
   </div>
 </DocumentFragment>

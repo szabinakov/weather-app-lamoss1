@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/ForecastDetails.css";
+import "../styles/App.css";
 
 function LocationDetails(props) {
   const { city, country, errorMessage } = props;

@@ -1,0 +1,42 @@
+.location-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.location-details__city {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.location-details__country {
+  font-size: 2rem;
+}
+
+.location-details__flag {
+  width: 6rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .location-details {
+    font-size: 2rem;
+  }
+
+  .location-details__city {
+    font-size: 4rem;
+  }
+
+  .location-details__country {
+    font-size: 3rem;
+  }
+
+  .location-details__flag {
+    width: 8rem;
+  }
+}
