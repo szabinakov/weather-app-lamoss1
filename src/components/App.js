@@ -70,36 +70,50 @@ function App() {
 
   const [selectedDate, setSelectedDate] = useState(0);
   const [searchText, setSearchText] = useState("");
-
+  const [errorMessage, setErrorMessage] = useState("");
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
   );
   const handleForecastSelect = (date) => {
     setSelectedDate(date);
   };
-
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
+    getForecast(setSelectedDate, setForecasts, setLocation, setErrorMessage);
   }, []);
 
   const handleCitySearch = () => {
-    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+    getForecast(
+      searchText,
+      setSelectedDate,
+      setForecasts,
+      setLocation,
+      setErrorMessage
+    );
   };
 
   return (
     <div className="pokeball">
       <h1 className="pokemon-font">Pokemon Weather</h1>
-      <LocationDetails city={location.city} country={location.country} />
+      <p className="pokemon-sub">What Pokemon will appear today?</p>
+      {!errorMessage && (
+        <>
+          <ForecastSummaries
+            forecasts={forecasts}
+            onForecastSelect={handleForecastSelect}
+          />
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        </>
+      )}
+      <LocationDetails
+        city={location.city}
+        country={location.country}
+        errorMessage={errorMessage}
+      />
       <SearchForm
         searchText={searchText}
         setSearchText={setSearchText}
         onSubmit={handleCitySearch}
       />
-      <ForecastSummaries
-        forecasts={forecasts}
-        onForecastSelect={handleForecastSelect}
-      />
-      {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
     </div>
   );
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/ForecastSummaries.css";
 import "../styles/App.css";
 import iconData from "../data/iconData.json";
 
 function ForecastSummary(props) {
   const { date, description, icon, temperature, onSelect } = props;
   const formattedDate = new Date(date).toDateString();
-  const weatherCode = `${icon.slice(0, 1)}00`;
+  const weatherCode = icon;
+  // `${icon.slice(0, 1)}00`;
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{date}</div>

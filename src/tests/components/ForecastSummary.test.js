@@ -22,6 +22,8 @@ describe("ForecastSummary", () => {
         icon={validProps.icon}
         temperature={validProps.temperature}
         onSelect={validProps.onSelect}
+        forecasts={validProps.forecasts}
+        onForecastSelect={validProps.onForecastSelect}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -35,6 +37,8 @@ describe("ForecastSummary", () => {
         icon={validProps.icon}
         temperature={validProps.temperature}
         onSelect={validProps.onSelect}
+        forecasts={validProps.forecasts}
+        onForecastSelect={validProps.onForecastSelect}
       />
     );
     expect(getByText("1111111")).toHaveClass("forecast-summary__date");

@@ -51,25 +51,26 @@ describe("ForecastSummaries", () => {
         icon: 721,
       },
     ],
-   onForecastSelect: () => {},
-}
+    onForecastSelect: () => {},
+  };
 
   describe("ForecastSummaries", () => {
-  it("renders correctly", () => {
-    const { asFragment } = render(
-      <ForecastSummaries
-        forecasts={validProps.forecasts}
-        onForecastSelect={validProps.onForecastSelect}
-      />
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
+    it("renders correctly", () => {
+      const { asFragment } = render(
+        <ForecastSummaries
+          forecasts={validProps.forecasts}
+          onForecastSelect={validProps.onForecastSelect}
+        />
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
 
-  it("renders the correct number of ForecastSummary instances", () => {
-    const { getAllByTestId } = render(
-      <ForecastSummaries forecasts={validProps} />
-    );
+    it("renders the correct number of ForecastSummary instances", () => {
+      const { getAllByTestId } = render(
+        <ForecastSummaries forecasts={validProps.forecasts} />
+      );
 
-    expect(getAllByTestId("forecast-summary")).toHaveLength(5);
+      expect(getAllByTestId("forecast-summary")).toHaveLength(5);
+    });
   });
 });

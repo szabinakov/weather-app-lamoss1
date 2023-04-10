@@ -8,7 +8,7 @@ describe("App", () => {
     render(
       <App location={getForecast.location} forecasts={getForecast.forecasts} />
     );
-    const h1Element = screen.getByText(/Sydney, Australia/i);
+    const h1Element = screen.getByText(/Liverpool, UK/i);
     expect(h1Element).toBeInTheDocument();
   });
 });

@@ -22,25 +22,31 @@
 import React from "react";
 import getPokemonImageUrl from "../helpers/getPokemonImageUrl";
 
-function ForecastDetails(props) {
-  const { date, temperature, description, windSpeed } = props;
+function ForecastDetails({ forecast }) {
+  const { date, temperature, description, wind } = forecast;
   const pokemonImage = getPokemonImageUrl();
   // ...
   <img src={pokemonImage} alt="Pokemon" />;
 
   return (
-    <div className="forecast-details">
-      <h2>{new Date(date).toLocaleDateString()}</h2>
-      <img src={pokemonImage} alt="Pokemon" />
-      <p>
-        <strong>Temperature:</strong> {temperature}°C
-      </p>
-      <p>
-        <strong>Description:</strong> {description}
-      </p>
-      <p>
-        <strong>Wind Speed:</strong> {windSpeed} mph
-      </p>
+    <div className="forecast-details-whole">
+      <div className="forecast-details">
+        <h2>{new Date(date).toLocaleDateString()}</h2>
+        <div className="pokemon-background">
+          <img src={pokemonImage} alt="Pokemon" />{" "}
+        </div>
+        <div className="forecast-details-main">
+          <p>
+            <strong>Temperature:</strong> {temperature.max}°C
+          </p>
+          <p>
+            <strong>Description:</strong> {description}
+          </p>
+          <p>
+            <strong>Wind Speed:</strong> {wind.speed} mph
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

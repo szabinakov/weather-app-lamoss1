@@ -1,9 +1,9 @@
 body {
   @import url(https://fonts.google.com/specimen/Edu+NSW+ACT+Foundation);
-  margin: 100;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   padding: 2.556rem 2rem;
   min-height: 100vh;
   background-color: blue;
