@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/App.css";
+import "../styles/ForecastSummary.css";
 import iconData from "../data/iconData.json";
 
 function ForecastSummary(props) {
