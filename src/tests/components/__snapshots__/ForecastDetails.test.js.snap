@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ForecastDetails renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-details-whole"
+  >
+    <div
+      class="forecast-details"
+    >
+      <h2>
+        01/01/1970
+      </h2>
+      <div
+        class="pokemon-background"
+      >
+        <img
+          alt="Pokemon"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"
+        />
+         
+      </div>
+      <div
+        class="forecast-details-main"
+      >
+        <p>
+          <strong>
+            Temperature:
+          </strong>
+           22°C
+        </p>
+        <p>
+          <strong>
+            Description:
+          </strong>
+           
+        </p>
+        <p>
+          <strong>
+            Wind Speed:
+          </strong>
+           100 mph
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

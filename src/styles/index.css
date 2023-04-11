@@ -1,0 +1,15 @@
+body {
+  @import url(https://fonts.google.com/specimen/Edu+NSW+ACT+Foundation);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  padding: 2.556rem 2rem;
+  min-height: 100vh;
+  background-color: blue;
+  /* background-image: url("https://c4.wallpaperflare.com/wallpaper/192/788/7/video-games-retro-games-anime-cartoon-wallpaper-preview.jpg"); */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-size: 200px;
+}
